@@ -6,7 +6,7 @@ class PigLatinizer
   def piglatinize_word(input_str)
     if (input_str.match(/^[aeiou]/))
       return input_str + "way"
-    else()
+    else
     end
   end
   def piglatinize_sentence(input_str)
