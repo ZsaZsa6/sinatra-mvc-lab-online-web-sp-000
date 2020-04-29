@@ -1,13 +1,10 @@
 class PigLatinizer
 
-  def piglatinize(input_str)
-    input_str.split(" ").length == 1 ? piglatinize_word(input_str) : piglatinize_sentence(input_str)
-  end
   def piglatinize_word(word)
-    
+
   end
-  def piglatinize(string)
-    a = string.split(" ")
+  def piglatinize(input_str)
+    a = input_str.split(" ")
     b = a.map {|word| piglatinize_word(word)}
     b.join(" ")
 end
