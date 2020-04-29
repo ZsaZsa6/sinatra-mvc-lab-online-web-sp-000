@@ -5,7 +5,7 @@ class App < Sinatra::Base
     erb :user_input
   end
   post "/newphrase" do
-    @phrase = []
+    @phrase = params[:phrase]
   end
 
 end
