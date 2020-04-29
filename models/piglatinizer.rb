@@ -5,7 +5,7 @@ class PigLatinizer
   end
   def piglatinize_word(word)
     if word =~ (/\A[aeiou]/i)
-      word = word + 'way'
+      word = word + 'ay'
     elsif word =~ (/\A[^aeiou]/i)
       match = /\A[^aeiou]/i.match(word)
       word = match.post_match + match.to_s + 'way'
