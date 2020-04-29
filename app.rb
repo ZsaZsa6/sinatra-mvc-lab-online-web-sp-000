@@ -4,9 +4,9 @@ class App < Sinatra::Base
   get "/" do
     erb :user_input
   end
-  post "/" do
+  post "/pig" do
     @phrase = params[:phrase]
-    
+
   end
 
 end
