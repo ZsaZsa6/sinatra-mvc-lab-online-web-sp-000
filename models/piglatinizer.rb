@@ -10,7 +10,6 @@ class PigLatinizer
       match = /\A[^aeiou]/i.match(word)
       word = match.post_match + match.to_s + 'ay'
     end
-    word
   end
   def piglatinize_sentence(sentence)
     sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
