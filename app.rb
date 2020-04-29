@@ -6,6 +6,7 @@ class App < Sinatra::Base
   end
   post "/" do
     @phrase = params[:phrase]
+    
   end
 
 end
