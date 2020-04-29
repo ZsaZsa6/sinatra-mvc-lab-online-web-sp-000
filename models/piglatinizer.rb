@@ -7,7 +7,7 @@ class PigLatinizer
     if !consonant?(word[0])
        word = word  + "ay"
     elsif consonant?(word[0]) && consonant?(word[1]) && consonant?(word[2])
-      word.split
+      word.split(" ")
     end
   end
   def piglatinize_sentence(sentence)
