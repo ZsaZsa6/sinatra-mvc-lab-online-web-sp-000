@@ -1,8 +1,9 @@
 class PigLatinizer
 
   def piglatinize_word(word)
-    if word[0] == (/\A[aeiou]/i)
-    word = word + 'ay'
+    first_letter = word[0].downcase
+    if ["a", "e", "i", "o", "u"].include?(first_letter)
+        "#{word}way"}
 
   end
   def piglatinize(input_str)
