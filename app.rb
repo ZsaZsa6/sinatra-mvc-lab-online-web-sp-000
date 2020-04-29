@@ -1,10 +1,10 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  get "/phrase" do
+  get "/" do
     erb :user_input
   end
-  post "/newphrase" do
+  post "/" do
     @phrase = params[:phrase]
   end
 
