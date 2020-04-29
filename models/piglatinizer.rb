@@ -5,14 +5,13 @@ class PigLatinizer
   end
   def piglatinize_word(word)
     if !consonant?(word[0])
-       "way"
-    else word[0]
+       word = word  + "way"
+    elsif consonant?(word[0])
     end
   end
   def piglatinize_sentence(sentence)
     sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
   end
-
 
 
 end
